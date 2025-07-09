@@ -1,0 +1,62 @@
+<footer class="bg-primary text-white">
+  <div class="container py-5">
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-white mb-4">Real Estate</h5>
+        <p class="text-white-50">
+          We are giving our students the best and suitable services for building their bright future.
+        </p>
+
+        <div class="mt-4">
+          <a href="#" class="d-inline-block text-white bg-secondary p-2 rounded me-2">
+            <i class="bi bi-facebook"></i>
+          </a>
+
+          <a href="#" class="d-inline-block text-white bg-secondary p-2 rounded me-2">
+            <i class="bi bi-twitter"></i>
+          </a>
+
+          <a href="#" class="d-inline-block text-white bg-secondary p-2 rounded">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <h5 class="text-white mb-4">Company</h5>
+        <ul class="list-unstyled">
+          <li *ngFor="let link of companyLinks" class="mb-2">
+            <a [href]="link.url" class="text-white-50 text-decoration-none">{{ link.name }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-white mb-4">Support</h5>
+        <ul class="list-unstyled">
+          <li *ngFor="let link of supportLinks" class="mb-2">
+            <a [href]="link.url" class="text-white-50 text-decoration-none">{{ link.name }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+
+        <h5 class="text-white mb-4">Contact Us</h5>
+
+        <div>
+          <input type="text" class="form-control mb-3" placeholder="Enter your number">
+          <button class="btn btn-light w-100 fw-bold">Request a Callback</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center text-white-50 py-3 mt-4 border-top">
+    Copyright © 2025 All Right Reserved YussefRostom
+  </div>
+</footer>
